@@ -60,7 +60,7 @@ function drawsnake(){
     if(snakehead.x == apple.x && snakehead.y == apple.y){
       score++;
       snakelength++;
-      scoreboard.textContent = `分數: ${score}/351 | 遊戲進行中`
+      scoreboard.textContent = `Scores: ${score}/351 | game running`
       eaten = true;
     }
     ctx.fillStyle = "red";
@@ -106,7 +106,7 @@ setInterval(() => {
   }
   if(gameover){
     console.log(gameover);
-    scoreboard.textContent = `分數: ${score}/351 | 遊戲已結束`;
+    scoreboard.textContent = `Scores: ${score}/351 | game finish`;
     endgame = true;
   }
 }, 125)
